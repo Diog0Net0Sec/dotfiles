@@ -1,0 +1,9 @@
+[user]
+	name = Diogo Neto
+	email = 168118296+DiogoNet0@users.noreply.github.com
+[init]
+	defaultBranch = main
+[color]
+	ui = auto
+[pull]
+	rebase = false
