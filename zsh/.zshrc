@@ -99,7 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 source <(fzf --zsh)
-
+eval $(thefuck --alias)
 
 declare -A pomo_options
 pomo_options["work"]="45"
