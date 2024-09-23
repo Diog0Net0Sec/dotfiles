@@ -12,7 +12,7 @@
 set $mod Mod1
 
 exec_always --no-startup-id killall polybar
-exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
+exec_always --no-startup-id ~/.config/polybar/launch.sh --cuts
 exec_always feh --bg-scale ~/wallpapers/japan2.jpg
 exec --no-startup-id picom
 # Font for window titles. Will also be used by the bar unless a different font
