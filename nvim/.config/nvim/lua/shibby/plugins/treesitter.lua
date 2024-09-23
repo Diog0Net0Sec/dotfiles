@@ -32,7 +32,6 @@ return {
         "prisma",
         "java",
         "markdown",
-        "latex",
         "markdown_inline",
         "svelte",
         "graphql",
