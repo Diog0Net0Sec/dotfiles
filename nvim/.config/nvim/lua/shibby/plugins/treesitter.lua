@@ -29,6 +29,7 @@ return {
         "yaml",
         "html",
         "css",
+        "scss",
         "prisma",
         "java",
         "markdown",
