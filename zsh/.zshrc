@@ -134,6 +134,18 @@ alias wo="pomodoro 'work'"
 alias br="pomodoro 'break'"
 alias ld='lazydocker'
 alias lg='lazygit'
+alias ez="nvim ~/.zshrc"
+alias en="cd ~/.config/nvim && nvim ."
+alias et='nvim ~/.tmux.conf'
+
+gacm() {
+    git add .
+    if [ "$#" -eq 0 ]; then
+        echo "Please provide a commit message."
+        return 1
+    fi
+    git commit -m "$*"
+}
 
 [[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh  # This loads NVM
 
