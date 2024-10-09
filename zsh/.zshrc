@@ -194,6 +194,9 @@ alias lg='lazygit'
 alias ez="nvim ~/.zshrc"
 alias en="cd ~/.config/nvim && nvim ."
 alias et='nvim ~/.tmux.conf'
+alias ls='lsd'
+alias la='lsd -a'
+alias lt='lsd --tree'
 
 gacm() {
     git add .
