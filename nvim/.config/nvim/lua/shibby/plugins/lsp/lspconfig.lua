@@ -100,6 +100,19 @@ return {
           end,
         })
       end,
+
+      ["eslint"] = function()
+        lspconfig["eslint"].setup({
+          capabilities = capabilities,
+          settings = {
+            workingDirectory = { mode = "auto" },
+            experimental = {
+              useFlatConfig = true,
+            },
+          },
+          filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact", "vue" },
+        })
+      end,
       ["graphql"] = function()
         -- configure graphql language server
         lspconfig["graphql"].setup({
