@@ -184,7 +184,7 @@ pomodoro () {
 
 [ -f /home/linuxbrew/.linuxbrew/etc/profile.d/autojump.sh ] && . /home/linuxbrew/.linuxbrew/etc/profile.d/autojump.sh
 
-# Example aliases
+# aliases
 
 alias j='autojump'
 alias wo="pomodoro 'work'"
@@ -197,6 +197,7 @@ alias et='nvim ~/.tmux.conf'
 alias ls='lsd'
 alias la='lsd -a'
 alias lt='lsd --tree'
+alias cez='clear && exec zsh'
 
 gacm() {
     git add .
