@@ -198,6 +198,8 @@ alias ls='lsd'
 alias la='lsd -a'
 alias lt='lsd --tree'
 alias cez='clear && exec zsh'
+alias dot='cd ~/dotfiles'
+alias dev='cd ~/dev'
 
 gacm() {
     git add .
