@@ -1,7 +1,0 @@
-font_family MesloLGS NF
-
-
-# BEGIN_KITTY_THEME
-# Catppuccin-Latte
-include current-theme.conf
-# END_KITTY_THEME
