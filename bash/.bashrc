@@ -126,3 +126,4 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH=$BUN_INSTALL/bin:$PATH
 
 exec zsh
+. "$HOME/.cargo/env"
