@@ -199,6 +199,7 @@ alias ls='lsd'
 alias la='lsd -a'
 alias lt='lsd --tree'
 alias cez='clear && exec zsh'
+alias emacs='emacsclient -c -a "emacs"'
 alias dot='cd ~/dotfiles'
 alias dev='cd ~/dev'
 
