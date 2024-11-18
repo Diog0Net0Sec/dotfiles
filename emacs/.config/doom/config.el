@@ -11,8 +11,13 @@
 (add-hook! 'org-mode-hook (company-mode -1))
 (add-hook! 'org-capture-mode-hook (company-mode -1))
 
+(after! company
+  (setq company-idle-delay 0.2  ; Faster autocomplete
+        company-minimum-prefix-length 1))
+
 (setq baby-blue '("#d2ecff" "#d2ecff" "brightblue"))
 
+(setq +format-on-save-enabled-modes '(javascript-mode css-mode web-mode))
 
 (setq
  doom-theme 'doom-dracula
@@ -21,6 +26,8 @@
  doom-variable-pitch-font (font-spec :family "Mononoki Nerd Font Mono")
  default-directory "~"
  dart-format-on-save t
+ doom-modeline-height 25
+ doom-modeline-bar-width 3
  web-mode-markup-indent-offset 2
  web-mode-code-indent-offset 2
  web-mode-css-indent-offset 2
@@ -148,3 +155,8 @@
 (set-popup-rule! "^\\*Org Agenda" :side 'bottom :size 0.90 :select t :ttl nil)
 (set-popup-rule! "^CAPTURE.*\\.org$" :side 'bottom :size 0.90 :select t :ttl nil)
 (set-popup-rule! "^\\*org-brain" :side 'right :size 1.00 :select t :ttl nil)
+
+(use-package! dap-mode
+  :config
+  (dap-auto-configure-mode)
+  (require 'dap-node))
