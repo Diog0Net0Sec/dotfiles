@@ -15,6 +15,13 @@ return {
     keymap.set("n", "[t", function()
       todo_comments.jump_prev()
     end, { desc = "Previous todo comment" })
+    -- TODO : add keymaps
+    -- WARNING : add keymaps
+    -- FIX: add keymaps
+    -- PERF: add keymaps
+    -- HACK: add keymaps
+    -- NOTE: add keymaps
+    -- TODO: add keymaps
 
     todo_comments.setup()
   end,
