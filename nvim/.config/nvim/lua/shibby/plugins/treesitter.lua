@@ -46,6 +46,7 @@ return {
         "dockerfile",
         "gitignore",
         "query",
+        "c_sharp",
         "vimdoc",
         "c",
       },

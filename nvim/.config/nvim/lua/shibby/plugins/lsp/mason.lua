@@ -31,7 +31,9 @@ return {
         "html",
         "emmet_ls",
         "cssls",
+        "csharp_ls",
         "tailwindcss",
+        "jinja_lsp",
         "svelte",
         "ts_ls",
         "lua_ls",
@@ -47,6 +49,8 @@ return {
         "stylua", -- lua formatter
         "isort", -- python formatter
         "black", -- python formatter
+        "djlint", -- nunjucks formatter
+        "csharpier", -- c# formatter
         "pylint",
         "eslint_d",
       },
