@@ -1,2 +1,3 @@
-require("shibby.core")
-require("shibby.lazy")
+require('config.options')
+require('config.keybinds')
+require('config.lazy')
