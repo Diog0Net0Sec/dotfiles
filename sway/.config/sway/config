@@ -41,6 +41,15 @@ default_border pixel 2
 # Set the Wallpaper:
 output * bg $HOME/.config/sway/wallpaper.jpg fill
 
+#Font Settings
+
+
+#Resolution
+
+output DP-3 {
+    mode 3840x2160@59.997Hz
+    scale 1.5
+}
 
 #====================================#
 # Activate the panel                 #
@@ -136,15 +145,15 @@ bindsym $mod+r mode "resize"
 # Keyboard Shortcuts (Workspaces) #
 #=================================#
 # Switch to workspace
-set $ws1 "1 - Communication"
-set $ws2 "2 - Browsing"
-set $ws3 "3 - System Administration"
-set $ws4 "4 - Learn Linux TV"
-set $ws5 "5 - Media"
-set $ws6 "6 - Writing"
-set $ws7 "7 - Homelab"
-set $ws8 "8 - Home Assistant"
-set $ws9 "9 - Unwind"
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
 
 # Move between workspaces
 bindsym $mod+1 workspace $ws1
@@ -237,7 +246,7 @@ bindsym ctrl+$mod+f exec pcmanfm
 
 # Open a terminal emulator:
 set $term kitty
-bindsym $mod+enter exec $term
+bindsym $mod+Return exec $term
 
 # Kill focused window:
 bindsym $mod+Shift+q kill
