@@ -223,13 +223,13 @@ bindsym $mod+minus scratchpad show
 # Keyboard Shortcuts (Hardware) #
 #===============================#
 # Audio
-bindsym XF86AudioRaiseVolume exec "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+; pkill -RTMIN+8 waybar"
-bindsym XF86AudioLowerVolume exec "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-; pkill -RTMIN+8 waybar"
-bindsym XF86AudioMute exec "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle; pkill -RTMIN+8 waybar"
+bindsym $mod+Ctrl+Right exec "wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+; pkill -RTMIN+8 waybar"
+bindsym $mod+Ctrl+Left exec "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-; pkill -RTMIN+8 waybar"
+bindsym $mod+Ctrl+m exec "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle; pkill -RTMIN+8 waybar"
 
 # Brightness
-bindsym XF86MonBrightnessDown exec light -U 10
-bindsym XF86MonBrightnessUp exec light -A 10
+bindsym $mod+Ctrl+Up exec "ddcutil setvcp 10 +10"
+bindsym $mod+Ctrl+Down exec "ddcutil setvcp 10 -10"
 
 
 #=============================================#
@@ -239,10 +239,10 @@ bindsym XF86MonBrightnessUp exec light -A 10
 set $menu rofi -show drun  -i | xargs swaymsg exec --
 
 # Launch your browser:
-bindsym $mod+shift+b exec vivaldi
+bindsym $mod+Shift+b exec firefox
 
 # Open a file manager:
-bindsym ctrl+$mod+f exec pcmanfm
+bindsym ctrl+$mod+f exec dolphin
 
 # Open a terminal emulator:
 set $term kitty
