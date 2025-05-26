@@ -14,14 +14,25 @@ return {
     --         enable_transparency()
     --     end
     -- },
+    -- {
+    --     "Mofiqul/vscode.nvim",
+    --     name = 'vscode',
+    --     config = function()
+    --         vim.cmd.colorscheme "vscode"
+    --         vim.cmd('hi Directory guibg=NONE')
+    --         vim.cmd('hi SignColumn guibg=NONE')
+    --         enable_transparency()
+    --     end
+    -- },
     {
-        "Mofiqul/vscode.nvim",
-        name = 'vscode',
+        "olimorris/onedarkpro.nvim",
+        priority = 1000, -- Ensure it loads first
         config = function()
-            vim.cmd.colorscheme "vscode"
+            vim.cmd("colorscheme onedark")
             vim.cmd('hi Directory guibg=NONE')
             vim.cmd('hi SignColumn guibg=NONE')
             enable_transparency()
         end
-    }
+    },
+
 }

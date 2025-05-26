@@ -17,12 +17,12 @@
 # Appearance and Theming #
 #========================#
 # Declare Colors:
-set $background #332b2b
+set $background #2e3440
 set $color_urgent #fb4934
 set $text_color #ffffff
-set $title_bg_unfocused #666666
-set $title_outline_active #0e844e
-set $title_outline_unfocused #332b2b
+set $title_bg_unfocused #3b4252
+set $title_outline_active #4c566a
+set $title_outline_unfocused #434c5e
 
 # Set Colors:           Border                   Background          Text          Indicator             Child Border
 client.background       $background
@@ -239,13 +239,13 @@ bindsym $mod+Ctrl+Down exec "ddcutil setvcp 10 -10"
 set $menu rofi -show drun  -i | xargs swaymsg exec --
 
 # Launch your browser:
-bindsym $mod+Shift+b exec firefox
+bindsym $mod+Ctrl+b exec firefox
 
 # Open a file manager:
-bindsym ctrl+$mod+f exec dolphin
+bindsym $mod+Ctrl+f exec dolphin
 
 # Open a terminal emulator:
-set $term kitty
+set $term foot
 bindsym $mod+Return exec $term
 
 # Kill focused window:
