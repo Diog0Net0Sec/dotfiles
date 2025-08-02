@@ -239,7 +239,7 @@ bindsym $mod+Ctrl+Down exec "ddcutil setvcp 10 -10"
 set $menu rofi -show drun  -i | xargs swaymsg exec --
 
 # Launch your browser:
-bindsym $mod+Ctrl+b exec firefox
+bindsym $mod+Ctrl+b exec brave-launcher
 
 # Open a file manager:
 bindsym $mod+Ctrl+f exec dolphin
