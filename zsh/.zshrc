@@ -11,11 +11,10 @@ fi
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 export PATH=$PATH:~/go/bin
+export PATH="$HOME/.local/bin:$PATH"
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-
-export PATH="$HOME/.config/emacs/bin:$PATH"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
@@ -165,19 +164,6 @@ _fzf_comprun() {
 
 eval $(thefuck --alias)
 
-declare -A pomo_options
-pomo_options["work"]="45"
-pomo_options["break"]="10"
-
-pomodoro () {
-  if [ -n "$1" -a -n "${pomo_options["$1"]}" ]; then
-  val=$1
-  echo $val | lolcat
-  timer ${pomo_options["$val"]}m
-  spd-say "'$val' session done"
-  fi
-}
-
 # Set personal aliases, overriding those provided by Oh My Zsh libs,
 # plugins, and themes. Aliases can be placed here, though Oh My Zsh
 # users are encouraged to define aliases within a top-level file in
@@ -192,8 +178,6 @@ pomodoro () {
 # aliases
 
 alias j='autojump'
-alias wo="pomodoro 'work'"
-alias br="pomodoro 'break'"
 alias ld='lazydocker'
 alias lg='lazygit'
 alias ez="nvim ~/.zshrc"
@@ -203,10 +187,8 @@ alias ls='lsd'
 alias la='lsd -a'
 alias lt='lsd --tree'
 alias cez='clear && exec zsh'
-alias emacs='emacsclient -c -a "emacs"'
 alias dot='cd ~/dotfiles'
 alias dev='cd ~/dev'
-alias ts='sudo -E timeshift-gtk'
 
 gacm() {
     git add .
