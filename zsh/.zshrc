@@ -181,6 +181,7 @@ alias j='autojump'
 alias ld='lazydocker'
 alias lg='lazygit'
 alias ez="nvim ~/.zshrc"
+alias org="nvim ~/org/"
 alias en="cd ~/.config/nvim && nvim ."
 alias et='nvim ~/.tmux.conf'
 alias ls='lsd'
